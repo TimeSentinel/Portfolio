@@ -551,19 +551,21 @@ textarea {
   .bg-none{
     background-color:none;
   }
-
+  .tblDivider {
+    border-bottom:#6b6969 1px solid;
+  }
   /* ---------- Text Modifiers ---------- */
   .titleLink {
     text-decoration: none;
     }
     .tblTitle {
         font-size: large;
-        font-weight: 600;
+        font-weight: 500;
         text-align: left;
     }
     .tblDesc {
         font-size: medium;
-        font-weight: 400;
+        font-weight: 300;
         font-style: italic;
         text-align: left;
     }
@@ -572,4 +574,5 @@ textarea {
         font-weight: 400;
         text-align: left;
     }
+    
 /* ##########------------ End Modifiers ------------########## */
