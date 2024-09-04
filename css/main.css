@@ -166,15 +166,18 @@ nav {
 /* ########################### Body ########################### */
 .container {
     width: 100%;
-    height: 800px;
+    height: auto;
     background-color: rgba(247, 252, 252, 0.932);
     position: relative;
 }
 
 .body {
+    display: block;
     width: 100%;
-    height: 100%;
-    display: flex;
+    height: auto;
+    padding-bottom: 100px;
+    margin-bottom:100px;
+    
 }
 
 .left-col {
@@ -288,12 +291,15 @@ nav {
 /* ---------------------- End Body ---------------------- */
 
 /* ########################### Footer ########################### */
-.footer {
+.footer {    
+    position: fixed;
+    bottom: 0;
     width: 100%;
     height: auto;
     padding-top: 22px;
     padding-bottom:48px;
     background-color: black;
+    opacity: .8;
     color:lightgray;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -493,31 +499,41 @@ textarea {
 
 /* ###################### Professional Table ################### */
 .divTable {
-    display: table;         
-    width: 1600px;         
+    display: block;         
+    width: 96%;         
     background-color: #eee;         
     border: 1px solid #666666;         
     border-spacing: 5px; 
+    margin-left:5px
   }
   .tblHead {
+    display: block;
+    column-span: all;
+    width:100%;
     text-align: center;
     color:#333;
-    border-bottom: #666666 solid;
+    margin-bottom: -10px;
   }
   .tblRow {
-    padding:4px;
-    display: table-row;
+    padding: 0 4px 3px 4px;
+    display: block;
+    height:auto;
     width: auto;
     clear: both;
+    
   }
   .tblCol {
-    float: left; 
     padding:4px;
     margin:2px;
-    display: table-column;         
+    display: table-cell;         
   }
-  .tblDivider {
-    border-bottom:1px solid #6b6969 ;
+ .tblDivider {
+    display: block;
+    margin: 0 5px 0 6px;
+    height: 1px;
+    width: 90%;
+    clear:both;
+    border-top: 1px solid rgb(212, 212, 212);
   }
   .tblFoot {
 
@@ -526,9 +542,11 @@ textarea {
 
   /* ###################### Modifiers ################### */
   /* ---------- Width Items ---------- */ 
+  .W-50 { width: 50px;  }  
   .W-100 { width: 100px;  }  
   .W-150 { width: 150px;  }  
   .W-200 { width: 200px;  }  
+  .W-300 { width: 300px;  }  
   .W-400 { width: 400px;  }  
   .W-600 { width: 600px;  }  
   .W-100p { width: 100%;  }
@@ -551,7 +569,7 @@ textarea {
     color:black;
   }
   .bg-gray{
-    background-color: gray;
+    background-color: rgb(165, 164, 164);
     color:white;
   }
   .bg-none{
@@ -563,8 +581,19 @@ textarea {
     text-decoration: none;
     }
     .tblTitle {
-        font-size: large;
+        font-size: 1.3em;
         font-weight: 500;
+        text-align: left;
+        margin-right: 10px;
+    }
+    .tblTitle-1 {
+        font-size: 1em;
+        font-weight: 400;
+        text-align: left;
+    }
+    .tblTitle-12 {
+        font-size: 1.2em;
+        font-weight: 300;
         text-align: left;
     }
     .tblDesc {
@@ -572,11 +601,13 @@ textarea {
         font-weight: 300;
         font-style: italic;
         text-align: left;
+        margin-right: 10px;
     }
     .tblInfo {
         font-size: medium;
         font-weight: 400;
         text-align: left;
+        margin-right: 10px;
     }
-    
+
 /* ##########------------ End Modifiers ------------########## */
