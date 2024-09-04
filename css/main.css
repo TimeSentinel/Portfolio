@@ -494,7 +494,7 @@ textarea {
 /* ###################### Professional Table ################### */
 .divTable {
     display: table;         
-    width: auto;         
+    width: 1600px;         
     background-color: #eee;         
     border: 1px solid #666666;         
     border-spacing: 5px; 
@@ -516,7 +516,9 @@ textarea {
     margin:2px;
     display: table-column;         
   }
-  
+  .tblDivider {
+    border-bottom:1px solid #6b6969 ;
+  }
   .tblFoot {
 
   }
@@ -529,7 +531,11 @@ textarea {
   .W-200 { width: 200px;  }  
   .W-400 { width: 400px;  }  
   .W-600 { width: 600px;  }  
-  .W-1 { width: 100%;   }
+  .W-100p { width: 100%;  }
+  .W-75p { width: 75%;  }
+  .W-50p { width: 50%;  }
+  .W-25p { width: 25%;  }
+  .W-12p { width: 12.5%;}
 
   /* ---------- Background/Font Colors ---------- */
   .bg-blk{
@@ -551,9 +557,7 @@ textarea {
   .bg-none{
     background-color:none;
   }
-  .tblDivider {
-    border-bottom:#6b6969 1px solid;
-  }
+
   /* ---------- Text Modifiers ---------- */
   .titleLink {
     text-decoration: none;
