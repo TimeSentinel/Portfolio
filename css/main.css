@@ -4,18 +4,20 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+ 
 h1 {
     color: black;
 }
 
 H2 {
     color: black;
+    text-decoration: double;
 }
 
 H3 {
-    color: black;
+    color: rgb(4, 4, 119);
 }
+
 
 hr {
     border-color: black;
@@ -153,7 +155,6 @@ nav {
     height: 10%;
     min-height: 30px;
     text-align: center;
-    -webkit-text-stroke: 1px black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -283,14 +284,15 @@ nav {
     font-size: x-large;
 }
 
-/* ---------------------- End Header ---------------------- */
+
+/* ---------------------- End Body ---------------------- */
 
 /* ########################### Footer ########################### */
 .footer {
     width: 100%;
     height: auto;
-    padding-top: 12px;
-    padding-bottom:8px;
+    padding-top: 22px;
+    padding-bottom:48px;
     background-color: black;
     color:lightgray;
     text-align: center;
@@ -430,8 +432,9 @@ nav {
         bottom: 12px;
         font-size: 2em;
         font-weight: bold;
-        -webkit-text-stroke: .75px black;
-    }
+        -webkit-text-stroke: .5px black;
+    
+}
 }
 
 /* ------------ End Desktop ------------ */
@@ -486,3 +489,87 @@ textarea {
 
 
 /* ##########------------ End About ------------########## */
+
+
+/* ###################### Professional Table ################### */
+.divTable {
+    display: table;         
+    width: auto;         
+    background-color: #eee;         
+    border: 1px solid #666666;         
+    border-spacing: 5px; 
+  }
+  .tblHead {
+    text-align: center;
+    color:#333;
+    border-bottom: #666666 solid;
+  }
+  .tblRow {
+    padding:4px;
+    display: table-row;
+    width: auto;
+    clear: both;
+  }
+  .tblCol {
+    float: left; 
+    padding:4px;
+    margin:2px;
+    display: table-column;         
+  }
+  
+  .tblFoot {
+
+  }
+  /* ##########------------ End Pro Table ------------########## */
+
+  /* ###################### Modifiers ################### */
+  /* ---------- Width Items ---------- */ 
+  .W-100 { width: 100px;  }  
+  .W-150 { width: 150px;  }  
+  .W-200 { width: 200px;  }  
+  .W-400 { width: 400px;  }  
+  .W-600 { width: 600px;  }  
+  .W-1 { width: 100%;   }
+
+  /* ---------- Background/Font Colors ---------- */
+  .bg-blk{
+    background-color: black;
+    color:#ccc;
+  }
+  .bg-wt{
+    background-color: white;
+    color:black;
+  }
+  .bg-lt{
+    background-color: #ccc;
+    color:black;
+  }
+  .bg-gray{
+    background-color: gray;
+    color:white;
+  }
+  .bg-none{
+    background-color:none;
+  }
+
+  /* ---------- Text Modifiers ---------- */
+  .titleLink {
+    text-decoration: none;
+    }
+    .tblTitle {
+        font-size: large;
+        font-weight: 600;
+        text-align: left;
+    }
+    .tblDesc {
+        font-size: medium;
+        font-weight: 400;
+        font-style: italic;
+        text-align: left;
+    }
+    .tblInfo {
+        font-size: medium;
+        font-weight: 400;
+        text-align: left;
+    }
+/* ##########------------ End Modifiers ------------########## */
