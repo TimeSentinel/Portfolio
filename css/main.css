@@ -548,6 +548,7 @@ textarea {
   .W-200 { width: 200px;  }  
   .W-300 { width: 300px;  }  
   .W-400 { width: 400px;  }  
+  .W-500 { width: 500px;  }  
   .W-600 { width: 600px;  }  
   .W-100p { width: 100%;  }
   .W-75p { width: 75%;  }
@@ -556,26 +557,28 @@ textarea {
   .W-12p { width: 12.5%;}
 
   /* ---------- Background/Font Colors ---------- */
-  .bg-blk{
+  .bg-blk {
     background-color: black;
     color:#ccc;
   }
-  .bg-wt{
+  .bg-wt {
     background-color: white;
     color:black;
   }
-  .bg-lt{
+  .bg-lt {
     background-color: #ccc;
     color:black;
   }
-  .bg-gray{
+  .bg-gray {
     background-color: rgb(165, 164, 164);
     color:white;
   }
-  .bg-none{
+  .bg-none {
     background-color:none;
   }
-
+  .txt-blue {
+    color:darkblue;
+  }
   /* ---------- Text Modifiers ---------- */
   .titleLink {
     text-decoration: none;
