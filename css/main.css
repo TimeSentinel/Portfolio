@@ -249,9 +249,10 @@ nav {
 
 .story {
     z-index: 99;
-    margin-top: 80px;
+    margin-top: 120px;
     padding-top: 5px;
-    position: fixed;
+    margin-left: 300px;
+
     width: 50%;
     height: auto;
     top: 12%;
@@ -557,6 +558,8 @@ textarea {
     margin-left: 20px
 }
 
+
+
 .tblHead {
     display: block;
     column-span: all;
@@ -590,7 +593,9 @@ textarea {
     border-top: 1px solid rgb(212, 212, 212);
 }
 
-.tblFoot {}
+.tblFoot {
+    padding:5px;
+}
 
 /* ##########------------ End Pro Table ------------########## */
 
@@ -695,6 +700,13 @@ textarea {
     color: rgb(3, 102, 214);
     text-decoration: none;
     -webkit-text-stroke: .5px rgb(248, 141, 2);
+}
+.titleLink-cool {
+    font-size: larger;
+    font-weight: 500;
+    color: rgb(3, 102, 214);
+    text-decoration: none;
+
 }
 
 .tblTitle {

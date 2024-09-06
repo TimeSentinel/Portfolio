@@ -1,0 +1,106 @@
+.graph {
+    padding-bottom: 50px;
+    background-image: url("../cases/images/graph-1600.png");
+    background-repeat: repeat;
+    opacity: .6;
+    border: 1px solid #d8d8d8;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.caseDesc {
+    padding: 4px;
+}
+.caseFoot {
+    display: inline-block;
+    width:90%;
+    margin:60px 10px 10px;
+    padding: 10px 4px;
+    background-color: rgb(223, 201, 105);
+    border-top: 1px solid rgb(94, 35, 11);
+    border-bottom: 1px solid rgb(94, 35, 11);
+}
+.caseFoot>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color:rgb(92, 17, 17);
+}
+
+/* ########################### Cards ########################### */
+.card1 { background-image: url(../cases/images/1-card.png); }
+.card2 { background-image: url(../cases/images/2-card.png); }
+.card3 { background-image: url(../cases/images/3-card.png); }
+.card4 { background-image: url(../cases/images/4-card.png); }
+.card5 { background-image: url(../cases/images/5-card.png); }
+.card6 { background-image: url(../cases/images/6-card.png); }
+.card7 { background-image: url(../cases/images/7-card.png); }
+
+.card {
+    display:inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: rgba(71, 71, 71, 0.44) 0px 4px 6px 2px;
+    transform-origin: top right;
+    rotate: -5deg;
+}
+
+/* ########################### Layouts ########################### */
+.itemFrame {
+    display: inline-flex;
+    width:80%;
+    min-width: 400px;
+    clear:both;
+    margin:10px;
+    background-color: rgb(253, 253, 247);
+    box-shadow: rgba(71, 71, 71, 0.44) 0px 4px 6px 2px;
+}
+.iright { float: right; }
+.ileft { float: left; }
+
+.itemPic {
+    width:58%;
+    height: auto;
+    padding:10px;
+    margin:10px;
+    object-fit: contain;
+    overflow: hidden;
+    box-shadow: rgba(71, 71, 71, 0.44) 0px 4px 6px 2px;
+
+}
+.itemPic>img {
+    height:400px;
+}
+.itemDesc {
+    width:48%;
+    height: auto;
+    padding:10px;
+    margin:10px;
+}
+.itemTitle {
+    font-size: 1.2em;
+    font-weight: 600;
+    color:rgb(6, 6, 90);
+    text-align: center;
+    margin:5px 5px 16px;
+    clear:both;
+}
+
+
+/* ########################### Media Selector ########################### */
+/* ------------ Mobile View ------------ */
+@media (max-width: 767px) {
+    .card { margin: 30px 0 10px 30px; width:200px; height:125px; }
+
+} /* ------------ End Mobile ------------ */
+
+/* ------------ Tablet View ------------ */
+@media (min-width: 768px) and (max-width: 991px) {
+    .card { margin: 40px 0 20px 40px; width:290px; height:180px; }
+
+} /* ------------ End Tablet ------------ */
+
+/* ------------ Desktop View ------------ */
+@media (min-width: 992px) {
+    .card { margin: 50px 0 20px 50px; width:500px; height:310px; }
+
+} /* ------------ End Desktop ------------ */
