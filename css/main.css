@@ -4,7 +4,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
- 
+
 h1 {
     color: black;
 }
@@ -24,7 +24,7 @@ hr {
 }
 
 p {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     color: rgb(49, 49, 49);
 }
@@ -176,13 +176,13 @@ nav {
     width: 100%;
     height: auto;
     padding-bottom: 50px;
-    margin-bottom:200px;
-    
+    margin-bottom: 200px;
+
 }
 
 .left-col {
     width: 12%;
-    height: 100%;
+    height: 80%;
     line-height: 5rem;
     float: left;
     display: flex;
@@ -192,11 +192,20 @@ nav {
 
 .lefty {
     width: 100%;
-    height: 100%;
+    height: 200px;
+    margin: 5px;
     border-style: solid;
     border-color: rgb(3, 74, 168);
     border-width: 1px;
+    border-radius: 8px;
     background-color: rgb(7, 29, 75);
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.caseThumb {
+    width: 400px;
+
 }
 
 .right-col {
@@ -210,7 +219,7 @@ nav {
 
 .top {
     display: block;
-    margin: 5px 10px;
+    margin: 5px 20px;
 }
 
 .divisionator {
@@ -242,7 +251,7 @@ nav {
     z-index: 99;
     margin-top: 80px;
     padding-top: 5px;
-    position: relative;
+    position: fixed;
     width: 50%;
     height: auto;
     top: 12%;
@@ -251,13 +260,15 @@ nav {
     transform-origin: top right;
     rotate: 5deg;
 }
-.story .about {
-    margin-top: 120px;
+
+.story-about {
+    margin-top: 180px;
     top: 10%;
     left: 20%;
     border: none;
     transform-origin: top right;
-    rotate: 5 deg;
+    rotate: 5deg;
+
 }
 
 .summary {
@@ -300,35 +311,41 @@ nav {
 /* ---------------------- End Body ---------------------- */
 
 /* ########################### Footer ########################### */
-.footer {    
+.footer {
     width: 100%;
     height: auto;
     background-color: black;
     opacity: .8;
-    color:lightgray;
+    color: lightgray;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.footer>p{
-    color:white;
-    margin:0;
-    padding:0;
+
+.footer>p {
+    color: white;
+    margin: 0;
+    padding: 0;
 }
-.footer>a{
+
+.footer>a {
     text-decoration: underline;
-    font-style:italic;
-    color:aqua;
+    font-style: italic;
+    color: aqua;
 }
-.footer>a:visited{
-    color:aqua;  
+
+.footer>a:visited {
+    color: aqua;
 }
+
 .footer>a:hover {
-    color:yellow;
+    color: yellow;
 }
-.footer-hr{
-    width:12%;
+
+.footer-hr {
+    width: 12%;
     border-color: yellow;
 }
+
 /* ##########------------ End Footer ------------########## */
 
 
@@ -374,11 +391,12 @@ nav {
         font-weight: 700;
         -webkit-text-stroke: .25px black;
     }
-    .footer {    
-        position:relative;
+
+    .footer {
+        position: relative;
         bottom: 0;
         padding-top: 10px;
-        padding-bottom:10px;
+        padding-bottom: 10px;
         font: size 10px;
     }
 }
@@ -416,11 +434,12 @@ nav {
         font-weight: bold;
         -webkit-text-stroke: .5px black;
     }
-    .footer {    
+
+    .footer {
         position: fixed;
         bottom: 0;
         padding-top: 22px;
-        padding-bottom:48px;
+        padding-bottom: 48px;
         font: size 12px;
     }
 
@@ -458,15 +477,16 @@ nav {
         font-size: 2em;
         font-weight: bold;
         -webkit-text-stroke: .5px black;
-    }    
-    .footer {    
+    }
+
+    .footer {
         position: fixed;
         bottom: 0;
         padding-top: 22px;
-        padding-bottom:48px;
+        padding-bottom: 48px;
         font: size 12px;
     }
-    
+
 }
 
 
@@ -484,23 +504,25 @@ nav {
     border: 4px solid hsl(192, 65%, 49%);
     display: block;
     font-family: Arial, Helvetica, sans-serif;
-    font-size:1.2em;
+    font-size: 1.2em;
     box-shadow: 8px 10px rgba(95, 95, 107, 0.781);
     z-index: 99;
 
 }
+
 input {
-    width:100%;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
-    color:rgb(45, 124, 241);
+    color: rgb(45, 124, 241);
     margin-bottom: 12px;
 }
+
 textarea {
-    width:100%;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    color:rgb(45, 124, 241);
+    color: rgb(45, 124, 241);
     min-height: 4em;
 }
 
@@ -512,8 +534,9 @@ textarea {
     padding: 16px 32px;
     text-decoration: none;
     margin: 20px 2px -10px;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 /* ##########------------ End Contact ------------########## */
 
 /* ###################### About Me ################### */
@@ -526,119 +549,194 @@ textarea {
 
 /* ###################### Professional Table ################### */
 .divTable {
-    display: block;         
-    width: 96%;         
-    background-color: #eee;         
-    border: 1px solid #666666;         
-    border-spacing: 5px; 
-    margin-left:5px
-  }
-  .tblHead {
+    display: block;
+    width: 96%;
+    background-color: #eee;
+    border: 1px solid #666666;
+    border-spacing: 5px;
+    margin-left: 20px
+}
+
+.tblHead {
     display: block;
     column-span: all;
-    width:100%;
+    width: 100%;
     text-align: center;
-    color:#333;
+    color: #333;
     margin-bottom: -10px;
-  }
-  .tblRow {
+}
+
+.tblRow {
     padding: 0 4px 3px 4px;
     display: block;
-    height:auto;
+    height: auto;
     width: auto;
     clear: both;
-    
-  }
-  .tblCol {
-    padding:4px 8px;
-    margin:2px;
-    display: table-cell;         
-  }
- .tblDivider {
+
+}
+
+.tblCol {
+    padding: 4px 8px;
+    margin: 2px;
+    display: table-cell;
+}
+
+.tblDivider {
     display: block;
     margin: 0 5px 0 6px;
     height: 1px;
     width: 90%;
-    clear:both;
+    clear: both;
     border-top: 1px solid rgb(212, 212, 212);
-  }
-  .tblFoot {
+}
 
-  }
-  /* ##########------------ End Pro Table ------------########## */
+.tblFoot {}
 
-  /* ###################### Modifiers ################### */
-  /* ---------- Width Items ---------- */ 
-  .W-20 { width: 20px;  }  
-  .W-50 { width: 50px;  }  
-  .W-100 { width: 100px;  }  
-  .W-150 { width: 150px;  }  
-  .W-200 { width: 200px;  }  
-  .W-300 { width: 300px;  }  
-  .W-400 { width: 400px;  }  
-  .W-500 { width: 500px;  }  
-  .W-600 { width: 600px;  }  
-  .W-100p { width: 100%;  }
-  .W-75p { width: 75%;  }
-  .W-50p { width: 50%;  }
-  .W-25p { width: 25%;  }
-  .W-12p { width: 12.5%;}
+/* ##########------------ End Pro Table ------------########## */
 
-  /* ---------- Background/Font Colors ---------- */
-  .bg-blk {
+/* ###################### Modifiers ################### */
+/* ---------- Width Items ---------- */
+.W-20 {
+    width: 20px;
+}
+
+.W-50 {
+    width: 50px;
+}
+
+.W-100 {
+    width: 100px;
+}
+
+.W-150 {
+    width: 150px;
+}
+
+.W-200 {
+    width: 200px;
+}
+
+.W-300 {
+    width: 300px;
+}
+
+.W-400 {
+    width: 400px;
+}
+
+.W-500 {
+    width: 500px;
+}
+
+.W-600 {
+    width: 600px;
+}
+
+.W-100p {
+    width: 100%;
+}
+
+.W-75p {
+    width: 75%;
+}
+
+.W-50p {
+    width: 50%;
+}
+
+.W-25p {
+    width: 25%;
+}
+
+.W-12p {
+    width: 12.5%;
+}
+
+/* ---------- Background/Font Colors ---------- */
+.bg-blk {
     background-color: black;
-    color:#ccc;
-  }
-  .bg-wt {
+    color: #ccc;
+}
+
+.bg-wt {
     background-color: white;
-    color:black;
-  }
-  .bg-lt {
+    color: black;
+}
+
+.bg-lt {
     background-color: #ccc;
-    color:black;
-  }
-  .bg-gray {
+    color: black;
+}
+
+.bg-gray {
     background-color: rgb(165, 164, 164);
-    color:white;
-  }
-  .bg-none {
-    background-color:none;
-  }
-  .txt-blue {
-    color:darkblue;
-  }
-  /* ---------- Text Modifiers ---------- */
-  .titleLink {
+    color: white;
+}
+
+.bg-none {
+    background-color: none;
+}
+
+.txt-blue {
+    color: darkblue;
+}
+
+/* ---------- Text Modifiers ---------- */
+.titleLink {
+    font-size: x-large;
+    font-weight: 600;
+    color: rgb(3, 102, 214);
     text-decoration: none;
-    }
-    .tblTitle {
-        font-size: 1.3em;
-        font-weight: 500;
-        text-align: left;
-        margin-right: 10px;
-    }
-    .tblTitle-1 {
-        font-size: 1em;
-        font-weight: 400;
-        text-align: left;
-    }
-    .tblTitle-12 {
-        font-size: 1.2em;
-        font-weight: 300;
-        text-align: left;
-    }
-    .tblDesc {
-        font-size: medium;
-        font-weight: 300;
-        font-style: italic;
-        text-align: left;
-        margin-right: 10px;
-    }
-    .tblInfo {
-        font-size: medium;
-        font-weight: 400;
-        text-align: left;
-        margin-right: 10px;
-    }
+    -webkit-text-stroke: .75px rgb(248, 141, 2);
+}
+.titleLink-sm {
+    font-size: larger;
+    font-weight: 500;
+    color: rgb(3, 102, 214);
+    text-decoration: none;
+    -webkit-text-stroke: .5px rgb(248, 141, 2);
+}
+
+.tblTitle {
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.highlight-center {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #1476c7;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.tblDesc {
+    font-size: medium;
+    font-weight: 300;
+    font-style: italic;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.tblInfo {
+    font-size: medium;
+    font-weight: 400;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.jobPosition {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.jobLocation {
+    font-size: 1em;
+    font-weight: 400;
+    color: darkblue;
+}
+
 
 /* ##########------------ End Modifiers ------------########## */
