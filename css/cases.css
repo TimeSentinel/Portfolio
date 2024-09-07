@@ -2,7 +2,6 @@
     padding-bottom: 50px;
     background-image: url("../cases/images/graph-1600.png");
     background-repeat: repeat;
-    opacity: .6;
     border: 1px solid #d8d8d8;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -34,6 +33,7 @@
 .card5 { background-image: url(../cases/images/5-card.png); }
 .card6 { background-image: url(../cases/images/6-card.png); }
 .card7 { background-image: url(../cases/images/7-card.png); }
+.card8 { background-image: url(../cases/images/8-card.png); }
 
 .card {
     display:inline-block;
@@ -65,7 +65,6 @@
     object-fit: contain;
     overflow: hidden;
     box-shadow: rgba(71, 71, 71, 0.44) 0px 4px 6px 2px;
-
 }
 .itemPic>img {
     height:400px;
@@ -84,7 +83,17 @@
     margin:5px 5px 16px;
     clear:both;
 }
+.itemWords {
+    text-align: left;
+    font-size: 1.1em;
+}
 
+.finale {
+    width: 80%;
+    border: 2px solid rgba(8, 8, 122, 0.63);
+    margin:20px auto;
+    clear: both;
+}
 
 /* ########################### Media Selector ########################### */
 /* ------------ Mobile View ------------ */
