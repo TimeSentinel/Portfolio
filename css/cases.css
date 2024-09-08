@@ -4,39 +4,65 @@
     background-repeat: repeat;
     border: 1px solid #d8d8d8;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .caseDesc {
     padding: 4px;
 }
+
 .caseFoot {
     display: inline-block;
-    width:90%;
-    margin:60px 10px 10px;
+    width: 90%;
+    margin: 60px 10px 10px;
     padding: 10px 4px;
     background-color: rgb(223, 201, 105);
     border-top: 1px solid rgb(94, 35, 11);
     border-bottom: 1px solid rgb(94, 35, 11);
 }
+
 .caseFoot>a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 800;
-    color:rgb(92, 17, 17);
+    color: rgb(92, 17, 17);
 }
 
 /* ########################### Cards ########################### */
-.card1 { background-image: url(../cases/images/1-card.png); }
-.card2 { background-image: url(../cases/images/2-card.png); }
-.card3 { background-image: url(../cases/images/3-card.png); }
-.card4 { background-image: url(../cases/images/4-card.png); }
-.card5 { background-image: url(../cases/images/5-card.png); }
-.card6 { background-image: url(../cases/images/6-card.png); }
-.card7 { background-image: url(../cases/images/7-card.png); }
-.card8 { background-image: url(../cases/images/8-card.png); }
+.card1 {
+    background-image: url(../cases/images/1-card.png);
+}
+
+.card2 {
+    background-image: url(../cases/images/2-card.png);
+}
+
+.card3 {
+    background-image: url(../cases/images/3-card.png);
+}
+
+.card4 {
+    background-image: url(../cases/images/4-card.png);
+}
+
+.card5 {
+    background-image: url(../cases/images/5-card.png);
+}
+
+.card6 {
+    background-image: url(../cases/images/6-card.png);
+}
+
+.card7 {
+    background-image: url(../cases/images/7-card.png);
+}
+
+.card8 {
+    background-image: url(../cases/images/8-card.png);
+}
 
 .card {
-    display:inline-block;
+    display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
     box-shadow: rgba(71, 71, 71, 0.44) 0px 4px 6px 2px;
@@ -47,42 +73,62 @@
 /* ########################### Layouts ########################### */
 .itemFrame {
     display: inline-flex;
-    width:80%;
+    width: 80%;
     min-width: 400px;
-    clear:both;
-    margin:10px;
+    clear: both;
+    margin: 10px;
     background-color: rgb(253, 253, 247);
     box-shadow: rgba(71, 71, 71, 0.44) 0px 4px 6px 2px;
 }
-.iright { float: right; }
-.ileft { float: left; }
+
+.iright {
+    float: right;
+}
+
+.ileft {
+    float: left;
+}
 
 .itemPic {
-    width:58%;
+    width: 58%;
     height: auto;
-    padding:10px;
-    margin:10px;
+    padding: 10px;
+    margin: 10px;
     object-fit: contain;
     overflow: hidden;
     box-shadow: rgba(71, 71, 71, 0.44) 0px 4px 6px 2px;
 }
+
 .itemPic>img {
-    height:400px;
+    height: 400px;
 }
-.itemDesc {
-    width:48%;
+
+.itemPic-w>img {
+    width: 100%;
     height: auto;
-    padding:10px;
-    margin:10px;
 }
+
+
+.itemPic img:hover {
+    transform: scale(2);
+}
+
+.itemDesc {
+    width: 48%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
 .itemTitle {
     font-size: 1.2em;
     font-weight: 600;
-    color:rgb(6, 6, 90);
+    color: rgb(6, 6, 90);
     text-align: center;
-    margin:5px 5px 16px;
-    clear:both;
+    margin: 5px 5px 16px;
+    clear: both;
 }
+
 .itemWords {
     text-align: left;
     font-size: 1.1em;
@@ -91,25 +137,66 @@
 .finale {
     width: 80%;
     border: 2px solid rgba(8, 8, 122, 0.63);
-    margin:20px auto;
+    margin: 20px auto;
     clear: both;
+}
+
+
+/* ########################### table/grid ########################### */
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+
+}
+
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 10px;
+}
+
+.gridImg {
+    width:100%;
+}
+.gridImg:hover{
+    transform: scale(2);
 }
 
 /* ########################### Media Selector ########################### */
 /* ------------ Mobile View ------------ */
 @media (max-width: 767px) {
-    .card { margin: 30px 0 10px 30px; width:200px; height:125px; }
+    .card {
+        margin: 30px 0 10px 30px;
+        width: 200px;
+        height: 125px;
+    }
 
-} /* ------------ End Mobile ------------ */
+}
+
+/* ------------ End Mobile ------------ */
 
 /* ------------ Tablet View ------------ */
 @media (min-width: 768px) and (max-width: 991px) {
-    .card { margin: 40px 0 20px 40px; width:290px; height:180px; }
+    .card {
+        margin: 40px 0 20px 40px;
+        width: 290px;
+        height: 180px;
+    }
 
-} /* ------------ End Tablet ------------ */
+}
+
+/* ------------ End Tablet ------------ */
 
 /* ------------ Desktop View ------------ */
 @media (min-width: 992px) {
-    .card { margin: 50px 0 20px 50px; width:500px; height:310px; }
+    .card {
+        margin: 50px 0 20px 50px;
+        width: 500px;
+        height: 310px;
+    }
 
-} /* ------------ End Desktop ------------ */
+}
+
+/* ------------ End Desktop ------------ */

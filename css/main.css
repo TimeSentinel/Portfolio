@@ -278,12 +278,15 @@ nav {
 }
 
 .story-about {
-    margin-top: 180px;
-    top: 10%;
-    left: 20%;
-    border: none;
+    margin: 150px 0 10px 50px;
+    padding:12px;
+    width:60%;
+    min-height: 100px;
+    text-align: left;
+    border: 1px solid lightgray;
     transform-origin: top right;
     rotate: 5deg;
+    box-shadow: 8px 10px rgba(95, 95, 107, 0.781);
 
 }
 
@@ -307,7 +310,7 @@ nav {
 
 .follow-up {
     position: absolute;
-    padding-top: 5px;
+    padding: 12px 20px;
     margin-left: 20%;
     width: 60%;
     height: auto;
@@ -316,6 +319,7 @@ nav {
     background-color: #82f078a2;
     rotate: -6deg;
     box-shadow: 8px 10px rgba(92, 124, 77, 0.6);
+    text-align: left;
 }
 
 .follow-up>p {
@@ -328,6 +332,7 @@ nav {
 
 /* ########################### Footer ########################### */
 .footer {
+    display:inline-block;
     width: 100%;
     height: 20px;
     background-color: black;
@@ -409,7 +414,6 @@ nav {
     }
 
     .footer {
-        position: relative;
         bottom: 0;
         padding-top: 5px;
         padding-bottom: 48px;
@@ -452,7 +456,6 @@ nav {
     }
 
     .footer {
-        position: relative;
         bottom: 0;
         padding-top: 15px;
         padding-bottom: 48px;
@@ -496,7 +499,6 @@ nav {
     }
 
     .footer {
-        position: relative;
         bottom: 0;
         padding-top: 18px;
         padding-bottom: 48px;
