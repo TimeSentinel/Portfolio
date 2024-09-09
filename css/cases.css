@@ -123,7 +123,7 @@
 .itemTitle {
     font-size: 1.2em;
     font-weight: 600;
-    color: rgb(6, 6, 90);
+    color: rgb(6, 6, 146);
     text-align: center;
     margin: 5px 5px 16px;
     clear: both;
@@ -131,7 +131,17 @@
 
 .itemWords {
     text-align: left;
+}
+
+.itemWords>p {
     font-size: 1.1em;
+    font-weight: 500;
+    color:gray;
+}
+.itemWords>ul {
+    font-size: 1em;
+    font-weight: 500;
+    color:gray;
 }
 
 .finale {
@@ -158,9 +168,10 @@
 }
 
 .gridImg {
-    width:100%;
+    width: 100%;
 }
-.gridImg:hover{
+
+.gridImg:hover {
     transform: scale(2);
 }
 
