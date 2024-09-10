@@ -74,7 +74,6 @@
 .itemFrame {
     display: inline-flex;
     width: 80%;
-    min-width: 400px;
     clear: both;
     margin: 10px;
     background-color: rgb(253, 253, 247);
@@ -136,12 +135,13 @@
 .itemWords>p {
     font-size: 1.1em;
     font-weight: 500;
-    color:gray;
+    color: gray;
 }
+
 .itemWords>ul {
     font-size: 1em;
     font-weight: 500;
-    color:gray;
+    color: gray;
 }
 
 .finale {
@@ -184,6 +184,11 @@
         height: 125px;
     }
 
+    .itemFrame {
+        display: inline-flex;
+        width: 80%;
+        min-width: 200px;
+    }
 }
 
 /* ------------ End Mobile ------------ */
@@ -196,6 +201,11 @@
         height: 180px;
     }
 
+    .itemFrame {
+        display: inline-flex;
+        width: 80%;
+        min-width: 300px;
+    }
 }
 
 /* ------------ End Tablet ------------ */
@@ -208,6 +218,11 @@
         height: 310px;
     }
 
+    .itemFrame {
+        display: inline-flex;
+        width: 80%;
+        min-width: 400px;
+    }
 }
 
 /* ------------ End Desktop ------------ */

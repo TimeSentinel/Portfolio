@@ -3,6 +3,8 @@ body {
     background-color: rgba(250, 246, 246, 0.281);
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: rgb(49, 49, 49);
 }
 
 h1 {
@@ -24,16 +26,16 @@ hr {
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    color: rgb(49, 49, 49);
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 /* ##########------------ End Default ------------########## */
 
 /* ########################### Header ########################### */
 nav {
-    width: 100%;
+    width: auto;
     height: 200px;
     background-color: pink;
     position: relative;
@@ -63,16 +65,17 @@ nav {
     background-position: top;
     background-size: 100% auto;
     font-size: smaller;
-    color:white;
+    color: white;
 }
 
 .social {
-    width:32px;
-    height:32px;
-    padding:0;
-    margin:0;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 0;
     opacity: .6;
 }
+
 /* ------------ menu ------------ */
 .menu {
     position: absolute;
@@ -111,7 +114,8 @@ nav {
 .a-series>a:hover {
     color: black;
     text-decoration: none;
-    text-shadow: yellow 2px 0 10px;}
+    text-shadow: yellow 2px 0 10px;
+}
 
 .current {
     color: orange;
@@ -246,7 +250,7 @@ nav {
 }
 
 .main-frame {
-    position: relative;
+    display: block;
     text-align: center;
     width: 100%;
     height: 80%;
@@ -266,8 +270,6 @@ nav {
     z-index: 99;
     margin-top: 120px;
     padding-top: 5px;
-    margin-left: 300px;
-
     width: 50%;
     height: auto;
     top: 12%;
@@ -279,8 +281,8 @@ nav {
 
 .story-about {
     margin: 150px 0 10px 50px;
-    padding:12px;
-    width:60%;
+    padding: 12px;
+    width: 60%;
     min-height: 100px;
     text-align: left;
     border: 1px solid lightgray;
@@ -291,10 +293,10 @@ nav {
 }
 
 .summary {
-    position: relative;
-    padding: 20px 12px 20px 8px;
+    display: block;
+    padding: 50px 12px 20px 8px;
     margin-top: 20px;
-    margin-left: 20px;
+
     width: 50%;
     height: auto;
     z-index: 1;
@@ -327,12 +329,90 @@ nav {
     font-size: large;
 }
 
+/* ########################### Layouts ########################### */
+.samplebox {
+    margin: 20px 10px;
+}
+
+.itemFrame {
+    display: inline-flex;
+    width: 80%;
+    clear: both;
+    margin: 10px;
+    background-color: rgb(253, 253, 247);
+    box-shadow: rgba(71, 71, 71, 0.44) 0px 4px 6px 2px;
+}
+
+.iright {
+    float: right;
+}
+
+.ileft {
+    float: left;
+}
+
+.itemPic {
+    width: 58%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    object-fit: contain;
+    overflow: hidden;
+    box-shadow: rgba(71, 71, 71, 0.44) 0px 4px 6px 2px;
+}
+
+.itemPic>img {
+    height: 400px;
+}
+
+.itemPic-w>img {
+    width: 100%;
+    height: auto;
+}
+
+
+.itemPic img:hover {
+    transform: scale(2);
+}
+
+.itemDesc {
+    width: 48%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+.itemTitle {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: rgb(6, 6, 146);
+    text-align: center;
+    margin: 5px 5px 16px;
+    clear: both;
+}
+
+.itemWords {
+    text-align: left;
+}
+
+.itemWords>p {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: gray;
+}
+
+.itemWords>ul {
+    font-size: 1em;
+    font-weight: 500;
+    color: gray;
+}
+
 
 /* ---------------------- End Body ---------------------- */
 
 /* ########################### Footer ########################### */
 .footer {
-    display:inline-block;
+    display: inline-block;
     width: 100%;
     height: 20px;
     background-color: black;
@@ -368,149 +448,6 @@ nav {
 }
 
 /* ##########------------ End Footer ------------########## */
-
-
-
-
-
-/* ########################### Media Selector ########################### */
-/* ------------ Mobile View ------------ */
-@media (max-width: 767px) {
-    nav {
-        height: 120px;
-    }
-
-    .hero>.logo {
-        width: 30%;
-        height: 80px;
-    }
-
-    .left-col {
-        width: 24%;
-    }
-
-    .right-col {
-        width: 76%;
-    }
-
-    .menu {
-        padding-right: 8px;
-        width: 50px;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .a-series {
-        display: none;
-    }
-
-    .headfoot {
-        bottom: 3px;
-        font-size: 1.5em;
-        font-weight: 700;
-        -webkit-text-stroke: .25px black;
-    }
-
-    .footer {
-        bottom: 0;
-        padding-top: 5px;
-        padding-bottom: 48px;
-        font: size 10px;
-    }
-}
-
-/* ------------ End Mobile ------------ */
-
-/* ------------ Tablet View ------------ */
-@media (min-width: 768px) and (max-width: 991px) {
-    nav {
-        height: 150px;
-    }
-
-    .menu {
-        padding-right: 10px;
-        width: 100px;
-    }
-
-    .a-series {
-        display: block;
-        height: 20%;
-        margin-top: 2px;
-    }
-
-    .topnav {
-        display: none;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    .headfoot {
-        bottom: 7px;
-        font-size: 1.75em;
-        font-weight: bold;
-        -webkit-text-stroke: .5px black;
-    }
-
-    .footer {
-        bottom: 0;
-        padding-top: 15px;
-        padding-bottom: 48px;
-        font: size 12px;
-    }
-
-}
-
-/* ------------ End Tablet ------------ */
-
-/* ------------ Desktop View ------------ */
-@media (min-width: 992px) {
-    nav {
-        height: 200px;
-    }
-
-    .menu {
-        padding-right: 15px;
-        width: 100px;
-    }
-
-    .topnav {
-        display: none;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    .a-series {
-        display: block;
-        height: 30%;
-        margin-top: 5px;
-    }
-
-    .headfoot {
-        bottom: 12px;
-        font-size: 2em;
-        font-weight: bold;
-        -webkit-text-stroke: .5px black;
-    }
-
-    .footer {
-        bottom: 0;
-        padding-top: 18px;
-        padding-bottom: 48px;
-        font: size 12px;
-    }
-
-}
-
-
-/* ------------ End Desktop ------------ */
-
-/* ##########------------ End Media ------------########## */
 
 /* ###################### Contact Form ################### */
 .contact>form {
@@ -788,3 +725,196 @@ textarea {
 
 
 /* ##########------------ End Modifiers ------------########## */
+
+/* ###################### Modifiers ################### */
+.tooltip {
+    position: relative;
+    display: inline;
+    border-bottom: 1px dotted blue;
+    color: blue;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* ##########------------ End Tooltips ------------########## */
+
+/* ########################### Media Selector ########################### */
+/* ------------ Mobile View ------------ */
+@media (max-width: 767px) {
+    nav {
+        height: 120px;
+    }
+
+    .hero>.logo {
+        width: 30%;
+        height: 80px;
+    }
+
+    .left-col {
+        width: 24%;
+    }
+
+    .right-col {
+        width: 76%;
+    }
+
+    .menu {
+        padding-right: 8px;
+        width: 50px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .a-series {
+        display: none;
+    }
+
+    .story {
+        margin-left: 60px;
+    }
+
+    .headfoot {
+        bottom: 3px;
+        font-size: 1.5em;
+        font-weight: 700;
+        -webkit-text-stroke: .25px black;
+    }
+
+    .footer {
+        bottom: 0;
+        padding-top: 5px;
+        padding-bottom: 48px;
+        font: size 10px;
+    }
+
+    .itemFrame {
+        display: inline-flex;
+        width: 80%;
+        min-width: 200px;
+    }
+}
+
+/* ------------ End Mobile ------------ */
+
+/* ------------ Tablet View ------------ */
+@media (min-width: 768px) and (max-width: 991px) {
+    nav {
+        height: 150px;
+    }
+
+    .menu {
+        padding-right: 10px;
+        width: 100px;
+    }
+
+    .a-series {
+        display: block;
+        height: 20%;
+        margin-top: 2px;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .headfoot {
+        bottom: 7px;
+        font-size: 1.75em;
+        font-weight: bold;
+        -webkit-text-stroke: .5px black;
+    }
+
+    .story {
+        margin-left: 240px;
+    }
+
+    .footer {
+        bottom: 0;
+        padding-top: 15px;
+        padding-bottom: 48px;
+        font: size 12px;
+    }
+
+    .itemFrame {
+        display: inline-flex;
+        width: 80%;
+        min-width: 300px;
+    }
+}
+
+/* ------------ End Tablet ------------ */
+
+/* ------------ Desktop View ------------ */
+@media (min-width: 992px) {
+    nav {
+        height: 200px;
+    }
+
+    .menu {
+        padding-right: 15px;
+        width: 100px;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .a-series {
+        display: block;
+        height: 30%;
+        margin-top: 5px;
+    }
+
+    .headfoot {
+        bottom: 12px;
+        font-size: 2em;
+        font-weight: bold;
+        -webkit-text-stroke: .5px black;
+    }
+
+    .story {
+        margin-left: 200px;
+    }
+
+    .footer {
+        bottom: 0;
+        padding-top: 18px;
+        padding-bottom: 48px;
+        font: size 12px;
+    }
+
+    .itemFrame {
+        display: inline-flex;
+        width: 80%;
+        min-width: 400px;
+    }
+}
+
+
+/* ------------ End Desktop ------------ */
+
+/* ##########------------ End Media ------------########## */
