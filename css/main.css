@@ -512,15 +512,13 @@ textarea {
     margin-left: 20px
 }
 
-
-
 .tblHead {
     display: block;
     column-span: all;
-    width: 100%;
+    width: auto;
     text-align: center;
     color: #333;
-    margin-bottom: -10px;
+    padding: 0 10% 10px;
 }
 
 .tblRow {
@@ -533,16 +531,25 @@ textarea {
 }
 
 .tblCol {
-    padding: 4px 8px;
-    margin: 2px;
+    margin: 0;
+    padding: 10px;
     display: table-cell;
+}
+
+.tblCol>ul {
+    padding: 0px 5px 3px 24px;
+    margin: 0;
+}
+
+.tblCol>ul>li {
+    padding-bottom: 5px;
 }
 
 .tblDivider {
     display: block;
-    margin: 0 5px 0 6px;
+    margin: 7px auto;
     height: 1px;
-    width: 90%;
+    width: 95%;
     clear: both;
     border-top: 1px solid rgb(212, 212, 212);
 }
@@ -640,6 +647,23 @@ textarea {
     color: darkblue;
 }
 
+.txt-red {
+    color: darkred;
+}
+
+.txt-green {
+    color: darkgreen;
+}
+
+.txt-small {
+    font-size: .9em;
+}
+
+.indent {
+    padding: 0 0 0 7px;
+    margin: 0;
+}
+
 /* ---------- Text Modifiers ---------- */
 .titleLink {
     font-size: x-large;
@@ -687,7 +711,9 @@ textarea {
     font-weight: 500;
     text-align: left;
     margin-right: 10px;
+    padding: 8px 2px 2px 8px;
 }
+
 
 .highlight-center {
     font-size: 1.3em;
@@ -715,6 +741,12 @@ textarea {
 .jobPosition {
     font-size: 1.1em;
     font-weight: 600;
+}
+
+.jobPosition-indent {
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 20px;
 }
 
 .jobLocation {
