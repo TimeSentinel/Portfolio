@@ -1,13 +1,20 @@
 /* Main CSS: Threepage Sample */
 
 /* ############## GENERAL PAGE ############## */
-body {}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {}
 
 nav {}
 
 h1 {}
 
-h2 {}
+h2 {
+    text-align: center;
+    color: rgb(108, 108, 198);
+}
 
 h3 {}
 
@@ -15,22 +22,142 @@ h4 {}
 
 p {}
 
-hr {}
+hr {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.subdivide {
+    margin-top: 35px;
+    border-color: rgb(108, 108, 198);
+    width: 75%;
+}
+
 /* -------------- END General Page -------------- */
 
 /* ############## Header ############## */
+.heroBack {
+    height: 18%;
+    background-color: azure;
+    background-image: url('../images/hero-1000.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+    margin: 2px 10px;
+}
+
+
+
+.logo>img {
+    width: 100%;
+}
+
+.menu {
+    margin-top: 50px;
+    visibility: visible;
+}
+
+.menu>ul {
+    list-style-type: none;
+    margin: 3px;
+    padding: 0 3px;
+    overflow: hidden;
+    background-color: #333333c8;
+}
+
+.menu>ul>li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.mini {
+    padding:10px 10px 0 0;
+    margin:0;
+    float: right;
+}
+.social {
+    width:30px;
+    height:auto;
+    box-shadow: 3px 3px rgba(7, 7, 7, 0.4);
+}
 
 
 /* -------------- END Header -------------- */
 
 /* ############## Main Body ############## */
+.container {
+    width: auto;
+    background-color: rgb(235, 235, 245);
+    margin: 0 10px;
+    padding: 20px 20px;
+}
 
+.docRow {
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.docRow p {
+    font-weight: 500;
+    font-size: 1.2em;
+    color: rgb(108, 108, 198);
+}
+
+.docRow img {
+    margin: 10px 5px;
+    width: 180px;
+    height: auto;
+}
+
+.docLeft {
+    float: left;
+    padding-right: 20px;
+}
+
+.docRight {
+    float: right;
+    padding-left: 20px;
+}
 
 /* -------------- END Main Body -------------- */
 
 /* ############## Footer ############## */
 
+.foot {
+    position: relative;
+    padding: 20px 0 50px 50px;
+    margin: 0 10px 0;
+    font-size: .9em;
+    background-color: gray;
+    color: white;
+}
 
+.foot a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.foot a:hover {
+    color: yellow;
+}
+
+.foot a:visited {
+    color: lightblue;
+}
 
 /* -------------- END Footer -------------- */
 
@@ -43,22 +170,32 @@ hr {}
 
 /* ------------ Mobile View ------------ */
 @media (max-width: 767px) {
-   
+    .logo {
+        padding: 6px 12px;
+        width: 27%;
+    }
 }
+
 /* ------------ End Mobile ------------ */
 
 /* ------------ Tablet View ------------ */
 @media (min-width: 768px) and (max-width: 991px) {
-  
-
+    .logo {
+        padding: 8px 16px;
+        width: 18%;
+    }
 }
+
 /* ------------ End Tablet ------------ */
 
 /* ------------ Desktop View ------------ */
 @media (min-width: 992px) {
-
-
+    .logo {
+        padding: 10px 20px;
+        width: 14%;
+    }
 }
+
 /* ------------ End Desktop ------------ */
 
 /* --------------------------- End Media --------------------------- */
