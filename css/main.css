@@ -1,6 +1,6 @@
 /* ########################### Default ########################### */
 body {
- background-color: #c1d5ee;
+    background-color: #c1d5ee;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
@@ -52,7 +52,7 @@ nav {
     border-top: 1px solid rgb(0, 0, 8);
 }
 
-.hero>.logo {
+.hero > .logo {
     position: absolute;
     z-index: 99;
     width: 16%;
@@ -95,7 +95,7 @@ nav {
     line-height: 3rem;
 }
 
-.a-series>a {
+.a-series > a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -104,7 +104,7 @@ nav {
     text-shadow: gray 1px 0 10px;
 }
 
-.a-series>a:visited {
+.a-series > a:visited {
     color: white;
     font-size: 1.2em;
     font-weight: 500;
@@ -112,7 +112,7 @@ nav {
     text-shadow: gray 1px 0 10px;
 }
 
-.a-series>a:hover {
+.a-series > a:hover {
     color: black;
     text-decoration: none;
     text-shadow: yellow 2px 0 10px;
@@ -305,7 +305,7 @@ nav {
     box-shadow: 8px 10px rgba(146, 132, 86, .3);
 }
 
-.summary>p {
+.summary > p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
 }
@@ -324,7 +324,7 @@ nav {
     text-align: left;
 }
 
-.follow-up>p {
+.follow-up > p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
 }
@@ -361,11 +361,11 @@ nav {
     box-shadow: rgba(71, 71, 71, 0.44) 0px 4px 6px 2px;
 }
 
-.itemPic>img {
+.itemPic > img {
     height: 400px;
 }
 
-.itemPic-w>img {
+.itemPic-w > img {
     width: 100%;
     height: auto;
 }
@@ -395,13 +395,13 @@ nav {
     text-align: left;
 }
 
-.itemWords>p {
+.itemWords > p {
     font-size: 1.1em;
     font-weight: 500;
     color: gray;
 }
 
-.itemWords>ul {
+.itemWords > ul {
     font-size: 1em;
     font-weight: 500;
     color: gray;
@@ -422,23 +422,23 @@ nav {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.footer>p {
+.footer > p {
     color: white;
     margin: 0;
     padding: 0;
 }
 
-.footer>a {
+.footer > a {
     text-decoration: underline;
     font-style: italic;
     color: aqua;
 }
 
-.footer>a:visited {
+.footer > a:visited {
     color: aqua;
 }
 
-.footer>a:hover {
+.footer > a:hover {
     color: yellow;
 }
 
@@ -450,7 +450,7 @@ nav {
 /* ##########------------ End Footer ------------########## */
 
 /* ###################### Contact Form ################### */
-.contact>form {
+.contact > form {
     box-sizing: border-box;
     min-width: 400px;
     padding: 2rem;
@@ -497,8 +497,6 @@ textarea {
 /* ###################### About Me ################### */
 
 
-
-
 /* ##########------------ End About ------------########## */
 
 
@@ -536,12 +534,12 @@ textarea {
     display: table-cell;
 }
 
-.tblCol>ul {
+.tblCol > ul {
     padding: 0px 5px 3px 24px;
     margin: 0;
 }
 
-.tblCol>ul>li {
+.tblCol > ul > li {
     padding-bottom: 5px;
 }
 
@@ -640,7 +638,7 @@ textarea {
 }
 
 .bg-none {
-    background-color: none;
+    background-color: transparent;
 }
 
 .txt-blue {
@@ -791,7 +789,7 @@ textarea {
         height: 120px;
     }
 
-    .hero>.logo {
+    .hero > .logo {
         width: 30%;
         height: 80px;
     }
@@ -832,7 +830,7 @@ textarea {
         bottom: 0;
         padding-top: 5px;
         padding-bottom: 48px;
-        font: size 10px;
+        fontsize: 10px;
     }
 
     .itemFrame {
@@ -884,7 +882,7 @@ textarea {
         bottom: 0;
         padding-top: 15px;
         padding-bottom: 48px;
-        font: size 12px;
+        fontsize: 12px;
     }
 
     .itemFrame {
@@ -936,7 +934,7 @@ textarea {
         bottom: 0;
         padding-top: 18px;
         padding-bottom: 48px;
-        font: size 12px;
+        fontsize: 12px;
     }
 
     .itemFrame {
